@@ -17,12 +17,10 @@ var web3 = new Web3(new Web3.providers.HttpProvider('https://data-seed-prebsc-1-
 var obj = JSON.parse(fs.readFileSync('BloggerNFT.json', 'utf8'));
 var abi = obj.abi;
 
-var contract_address = '0x694d7dF1760F2D24fa5F776d763BcdcFA781036d'
-var contract_owner = '0x3b7d9A28187Ccf6EE1dbda88c788C886B419767b'
-var contract_private = '8669375185af1b3f0d51473d4963a3981cb4b9b3b308e860c1f24230cf9785e1'
-// var contract_address = "0xEFAF03d165fB28EA2722D9803Bc775589d8463A2"
-// var contract_owner = "0x86ba244a5322c961695c3b6A46b26E81199473D2"
-// var contract_private = "da10d9184bbe9de28847f3103dc6a9e15f842c2a8cd0dfca23f1a8d9be1b75b6"
+var contract_address = "<Contract Address>"
+var contract_owner = "<Contract Owner Wallet>"
+var contract_private = "<import contract private key to sign>//Need to integrate with wallet for this
+
 
 const contract = new web3.eth.Contract(abi=abi,address=contract_address)
 
